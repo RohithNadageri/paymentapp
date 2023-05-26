@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css?family=Amarante");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital@1&family=Montserrat&family=Titillium+Web:wght@600&display=swap");
+
+html {
+  overflow-y: scroll;
+  font-family: "Montserrat", sans-serif;
+}
+
+::selection {
+  background: #5f74a0;
+  color: #fff;
+}
+::-moz-selection {
+  background: #5f74a0;
+  color: #fff;
+}
+::-webkit-selection {
+  background: #5f74a0;
+  color: #fff;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+strong,
+b {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+.wrapper-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.6em;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/** page structure **/
+#wrapper {
+  display: block;
+  width: 737px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 10px 17px;
+  border-radius: 7px;
+  -webkit-box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.35);
+}
+#wrapper1 {
+  display: block;
+  width: 358px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 10px 17px;
+  border-radius: 7px;
+  -webkit-box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.35);
+}
+
+#keywords {
+  margin: 0 auto;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+#keywords1 {
+  margin: 0 auto;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+#keywords thead {
+  cursor: pointer;
+  background: linear-gradient(to right, #acb6e5, #86fde8);
+}
+#keywords1 thead {
+  cursor: pointer;
+  background: linear-gradient(to right, #acb6e5, #86fde8);
+}
+#keywords thead tr th {
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;
+}
+#keywords1 thead tr th {
+  font-weight: bold;
+}
+#keywords thead tr th span {
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+#keywords1 thead tr th span {
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#keywords thead tr th.headerSortUp,
+#keywords thead tr th.headerSortDown {
+  background: #acc8dd;
+}
+#keywords1 thead tr th.headerSortUp,
+#keywords1 thead tr th.headerSortDown {
+  background: #acc8dd;
+}
+
+#keywords thead tr th.headerSortUp span {
+  background-image: url("https://i.imgur.com/SP99ZPJ.png");
+}
+#keywords thead tr th.headerSortDown span {
+  background-image: url("https://i.imgur.com/RkA9MBo.png");
+}
+
+#keywords tbody tr {
+  color: #555;
+}
+#keywords1 tbody tr {
+  color: #555;
+}
+#keywords tbody tr td {
+  text-align: center;
+  padding: 15px 10px;
+}
+#keywords1 tbody tr td {
+  text-align: center;
+  padding: 10px 30px;
+}
+#keywords tbody tr td.lalign {
+  text-align: left;
+}
+#keywords1 tbody tr td.lalign {
+  text-align: left;
+}
+
+.show_more {
+  text-align: end;
+  cursor: pointer;
+  color: blue;
+  margin-right: 25px;
+}
+.show_more:hover {
+  text-decoration: underline;
+}
+
+.profile_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+}
+.profile_pic {
+  position: absolute;
+  right: 87px;
+  bottom: -17px;
+}
+.profile_edit_box {
+  width: 32px !important;
+  height: 29px !important;
+  background: #3c5bda !important;
+  transition: transform 0.3s ease-in-out;
+}
+.profile_edit_box:hover {
+  background: teal !important;
+  transform: scale(1.1);
+}
+.profile_edit_box > path {
+  color: #86fde8;
+}
+
+/* Bill payment btn ->>>>>> */
+
+.billpayment_btn_box {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.billpayment_btn {
+  --primary-color: #0d6efd;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 0.6rem 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+.billpayment_btn .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.billpayment_btn .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.billpayment_btn .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.billpayment_btn:hover {
+  background-color: var(--hover-color);
+}
+
+.billpayment_btn:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.billpayment_btn:hover .arrow:before {
+  right: 0;
+}
